@@ -1,36 +1,107 @@
 <!DOCTYPE html>
+<html lang="vi">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Website ĐHKT TP.HCM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         h1 {
             text-align: center;
-            color: blue;
-            font-weight: 700;
-            /* in đậm */
-            margin: 2rem 0 1rem;
+            color: #333;
         }
 
-        h2 {
-            text-align: right;
-            color: red;
-            /* chữ đỏ */
-            font-style: italic;
-            /* in nghiêng */
-            margin: 0 0 2rem;
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
         }
 
-        body {
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile .details {
+            font-size: 18px;
+        }
+
+        .links {
+            margin-top: 30px;
+        }
+
+        .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin: 10px 0;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <h1>Chào mừng bạn đến website của trường ĐHKT TP.HCM</h1>
-    <h2>Khoa Công Nghệ Thông Tin Kinh Doanh</h2>
+
+    <div class="container">
+        <h1>Trang Cá Nhân</h1>
+
+        <!-- Thông tin cá nhân -->
+        <div class="profile">
+            <div class="details">
+                <h3>Họ và tên: Nguyễn Vũ Kim Anh</h3>
+                <p>Trường: Đại học Kinh Tế TP.HCM</p>
+                <p>Social: <a href="https://github.com/anhnguyen31231021968/KimAnh_PTUDTMDT_btvntuan2"
+                        target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Liên kết đến các bài tập -->
+        <div class="links">
+            <h2>Các bài tập đã làm</h2>
+            <ul>
+                <li><a href="baitap1.html" target="_blank">Câu 1: Website trường ĐHKT TP.HCM</a></li>
+                <li><a href="baitap2.html" target="_blank">Câu 2: Website có hình nền và nhạc nền</a></li>
+                <li><a href="baitap3.html" target="_blank">Câu 3: Danh sách chuyên ngành đào tạo</a></li>
+                <li><a href="baitap4.html" target="_blank">Câu 4: Các ngành đào tạo với thẻ card</a></li>
+                <li><a href="baitap5.html" target="_blank">Câu 5: Liên kết ngành học</a></li>
+                <li><a href="baitap6.html" target="_blank">Câu 6: Mục lục các câu 3-5</a></li>
+                <li><a href="baitap7.html" target="_blank">Câu 7: Bảng mạng nghệ thuật & giải trí</a></li>
+                <li><a href="baitap8.html" target="_blank">Câu 8: HTML5 Structure</a></li>
+                <li><a href="baitap9.html" target="_blank">Câu 9: Quiz</a></li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 
 </html>
