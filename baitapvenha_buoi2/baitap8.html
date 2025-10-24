@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML5 Structure</title>
+    <style>
+        *:hover {
+            outline: 5px solid rgba(255, 0, 0, .35);
+        }
+
+        section,
+        header,
+        hgroup,
+        footer,
+        nav,
+        article,
+        aside,
+        figure,
+        figcaption {
+            border: 1px solid #fff;
+            background-color: rgba(153, 153, 153, .25);
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        section,
+        aside {
+            float: left;
+        }
+
+        header,
+        footer {
+            clear: both;
+        }
+
+        #pagecontent {
+            margin: 0 auto;
+            max-width: 1045px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #pageheader,
+        #pagefooter {
+            max-width: 1020px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #sectioncontent1 {
+            max-width: 600px;
+            min-width: 400px;
+            width: 100%;
+        }
+
+        #asidecontent1 {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eee;
+        }
+
+        h1.sitename a {
+            color: #1e3a8a;
+            text-decoration: underline;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .brand img {
+            height: 64px;
+            object-fit: contain;
+            background: #fff;
+            padding: 6px;
+        }
+
+        nav a {
+            color: #1e3a8a;
+            text-decoration: underline;
+            margin: 0 12px;
+        }
+
+        .panel-title {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .linkbar a {
+            display: inline-block;
+            padding: 6px 8px;
+            background: rgba(255, 255, 255, .35);
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        figcaption {
+            background: rgba(255, 255, 255, .35);
+        }
+
+        .muted {
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pagecontent">
+        <header id="pageheader">
+            <hgroup id="pagehgroup" class="brand">
+                <h1 class="sitename"><a href="#" rel="home" title="Home">HTML5 Structure</a></h1>
+                <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png" alt="SBIT Logo">
+            </hgroup>
+
+            <nav id="globalnav" aria-label="Điều hướng">
+                <a href="#">Chương trình Đại học</a>
+                <a href="#">CT Liên thông Đại học</a>
+                <a href="#">Chương trình Sau đại học</a>
+                <a href="#">Chương trình quốc tế</a>
+            </nav>
+        </header>
+
+        <section id="sectioncontent1">
+            <header id="sectionheader1">
+                <h2 class="panel-title">Chương trình Đại học</h2>
+            </header>
+
+            <article id="articlecontent1">
+                <header id="articleheader1">
+                    <h3 class="linkbar"><a href="#">Hệ thống hoạch định nguồn lực doanh nghiệp (ERP)</a></h3>
+                </header>
+                <p class="muted">Nhu cầu xã hội Hoạch định các nguồn lực một cách hiệu quả để nhắm đến mục tiêu giảm chi
+                    phí, tăng sức cạnh tranh là một vấn đề mà mọi doanh nghiệp luôn phải đối mặt, nhất là trong thời kỳ
+                    hội nhập hiện nay. Hệ thống hoạch định nguồn lực doanh nghiệp (ERP) […]</p>
+                <figure id="figure1">
+                    <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/33-CU-NHAN-HE-THONG-HOACH-DINH-NGUON-LUC-DOANH-NGHIEP.png"
+                        alt="ERP Illustration">
+                    <figcaption>ERP</figcaption>
+                </figure>
+                <footer id="articlefooter1">
+                    <p class="muted">Article footer</p>
+                </footer>
+            </article>
+
+            <article id="articlecontent2">
+                <header id="articleheader2">
+                    <h3 class="linkbar"><a href="#">Ngành Thương mại điện tử</a></h3>
+                </header>
+                <p class="muted">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước
+                    tiến mạnh mẽ...</p>
+                <figure id="figure2">
+                    <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-770x385.jpg"
+                        alt="E-commerce">
+                    <figcaption>Thương mại điện tử</figcaption>
+                </figure>
+                <footer id="articlefooter2">
+                    <p class="muted">Article footer</p>
+                </footer>
+            </article>
+
+            <footer id="sectionfooter1">
+                <p class="muted">Section Footer</p>
+            </footer>
+        </section>
+
+        <aside id="asidecontent1">
+            <header class="sectionheader">
+                <h2 class="panel-title">Liên kết</h2>
+            </header>
+
+            <article>
+                <header>
+                    <h3 class="linkbar"><a href="#">Hệ thống thông tin kinh doanh</a></h3>
+                </header>
+                <figure>
+                    <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-770x385.jpg" alt="HTTT Kinh doanh">
+                </figure>
+                <p class="muted">Nhu cầu xã hội Hiện nay, ứng dụng công nghệ trong điều hành kinh doanh đang được các
+                    nhà quản trị quan tâm...</p>
+                <footer>
+                    <p class="muted">Aside Article footer</p>
+                </footer>
+            </article>
+        </aside>
+
+        <footer id="pagefooter">
+            <p>Page Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>

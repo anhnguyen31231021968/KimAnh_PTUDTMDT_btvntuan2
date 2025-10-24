@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website ĐHKT TP.HCM</title>
+    <style>
+        /* Hình nền mới */
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            min-height: 100vh;
+            background-image: url('https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_1_10_638405155938552381_hoc-phi-ueh.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #111;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 18px;
+            backdrop-filter: blur(2px);
+        }
+
+        /* Yêu cầu 1: H1 canh giữa, xanh, đậm */
+        h1 {
+            text-align: center;
+            color: blue;
+            font-weight: 700;
+            /* in đậm */
+            margin: 1.5rem 0 1rem;
+        }
+
+        /* Yêu cầu 1: H2 canh phải, đỏ, nghiêng */
+        h2 {
+            text-align: right;
+            color: red;
+            /* chữ đỏ */
+            font-style: italic;
+            /* in nghiêng */
+            margin: 0 0 2rem;
+        }
+
+        /* Yêu cầu 3: Chữ chạy (marquee) không dùng thẻ <marquee> cũ, dùng CSS animation */
+        .marquee-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 8px 0;
+            margin-bottom: 16px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .marquee {
+            display: inline-block;
+            padding-left: 100%;
+            font-weight: 700;
+            font-size: 1.1rem;
+            animation: marquee 14s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Audio khối và mô tả */
+        .audio-block {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 12px 0 24px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 12px;
+        }
+
+        .audio-block small {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Yêu cầu 3: Chữ chạy -->
+    <div class="marquee-wrap">
+        <div class="marquee">Chào mừng bạn đến website của trường ĐHKT TP.HCM — Welcome to the University of Economics
+            Ho Chi Minh City website!</div>
+    </div>
+
+    <main>
+        <h1>Chào mừng bạn đến website của trường ĐHKT TP.HCM</h1>
+        <h2>Khoa Công Nghệ Thông Tin Kinh Doanh</h2>
+
+        <!-- Yêu cầu 2: Nhạc nền - sử dụng thẻ audio theo hướng dẫn HTML5 Audio (W3Schools) và tự động phát khi vào trang -->
+        <div class="audio-block">
+            <audio controls autoplay loop>
+                <!-- Ví dụ nguồn nhạc dùng demo của W3Schools. Bạn có thể thay bằng file .mp3 của mình -->
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+            </audio>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
